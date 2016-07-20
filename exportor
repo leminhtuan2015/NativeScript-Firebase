@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+IOS_PLATFORM="platforms/ios"
+PROJECT_NAME="MyApp"
+
+#xcodebuild archive \
+#   -project "$IOS_PLATFORM/$PROJECT_NAME.xcodeproj" \
+#   -scheme "$PROJECT_NAME" \
+#   -archivePath "$IOS_PLATFORM/$PROJECT_NAME.xcarchive"
+
+#xcodebuild archive \
+#     -workspace "$IOS_PLATFORM/$PROJECT_NAME.xcworkspace" \
+#     -scheme "$PROJECT_NAME" \
+#     -archivePath "$IOS_PLATFORM/build/$PROJECT_NAME.xcarchive"
+
+xcodebuild -exportArchive \
+    -exportFormat ipa \
+    -archivePath "$IOS_PLATFORM/build/$PROJECT_NAME.xcarchive" \
+    -exportPath "$IOS_PLATFORM/build/$PROJECT_NAME.ipa"
