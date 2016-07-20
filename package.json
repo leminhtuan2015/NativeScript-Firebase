@@ -1,0 +1,16 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "com.hero.audio19",
+    "tns-ios": {
+      "version": "2.1.1"
+    }
+  },
+  "dependencies": {
+    "nativescript-plugin-firebase": "^3.4.4",
+    "tns-core-modules": "2.1.0"
+  }
+}

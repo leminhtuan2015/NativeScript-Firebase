@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <StackLayout>
+      <Button text="INIT FIREBASE" tap="{{ init }}" />
+
+      <TextField width="300px" hint="MY_ID" text="{{ my_id }}"/>
+      <Button text="REGISTER EVENT" tap="{{ register }}" />
+
+      <TextField width="300px" hint="ID" text="{{ id }}"/>
+      <TextField width="300px" hint="NAME" text="{{ name }}"/>
+      <Button text="UPDATE DATA" tap="{{ update }}" />
+
+      <Label text="{{ data1 }}" class="message" textWrap="true"/>
+  </StackLayout>
+</Page>
